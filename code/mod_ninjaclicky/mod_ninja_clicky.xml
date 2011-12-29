@@ -1,0 +1,36 @@
+<?xml version="1.1" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Ninja Clicky</name>
+	<author>Richie Mortimer</author>
+	<creationDate>October 2007</creationDate>
+	<copyright>Richie Mortimer, NinjaForge.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>richie@ninjaforge.com</authorEmail>
+	<authorUrl>http://ninjaforge.com/</authorUrl>
+	<version>1.4.0</version>
+	<description>MODULEDESCRIPTION</description>
+  	
+	<files>
+    	<filename module="mod_ninja_clicky">mod_ninja_clicky.php</filename>
+    	<filename>index.html</filename>  	
+    	<folder>assets</folder>
+	</files>
+	
+	<languages folder="language">
+      <language tag="en-GB">en-GB.mod_ninja_clicky.ini</language>
+  </languages>
+	
+	<params>
+      <param name="moduleclass_sfx" type="text" default="-flush" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling. Leave this as it is if you want this module (not the staging modules) to appear invisible.If this is blank, then you will see the modules wrapped inside each other." />   
+      <param name="ninclicky_javascript" type="radio" default="1" label="Disable Javascript" description="Do you want to disable javascript" >
+      			<option value="0">Disable</option>
+      			<option value="1">Enable</option>
+      		</param>
+      <param name="ninclicky_invisible" type="radio" default="1" label="Invisible Mode" description="do you want to make this module invisible, please note does not work when js is disabled" >
+      			<option value="0">Disable</option>
+      			<option value="1">Enable</option>
+      		</param>
+      <param name="ninclicky_button" type="imagelist" directory="/modules/mod_ninja_clicky/assets/images/" default="badge.gif" label="Button Image" description="select the button you would like to use" />      		
+      <param name="ninclicky_ID" type="text" default="12345" label="Site ID" description="Enter your Site ID from your GetClicky account here" />
+	</params>
+</install>
